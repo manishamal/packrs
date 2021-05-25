@@ -14,12 +14,7 @@
     "lint": "eslint --fix --ext .jsx,.js src/*.js src/**/*.js",
     "lint-two": "NODE_ENV=production lint-staged"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint"
-    }
-  },
+
   "dependencies": {
     "@mdx-js/loader": "^1.6.21",
     "@next/mdx": "^10.0.1",
