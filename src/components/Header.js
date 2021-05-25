@@ -5,6 +5,7 @@ const NavTitle = styled.div`
   align-self: center;
   a {
     font-weight: 900;
+
     :hover {
       color: #000;
     }
@@ -14,6 +15,9 @@ const NavTitle = styled.div`
 const Container = styled.nav`
   .navbar-item img {
     max-height: 5rem !important;
+  }
+  .is-color-green {
+    background-color: rgb(51, 183, 96);
   }
 `;
 
@@ -42,18 +46,18 @@ const Header = () => (
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item">About</a>
-        <a class="navbar-item">Supports</a>
+      <div class="navbar-start is-size-5 has-text-weight-medium	">
+        <a class="navbar-item has-text-black">About</a>
+        <a class="navbar-item has-text-black">Supports</a>
       </div>
 
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
+            <a class="button is-primary is-color-green ">
+              <strong className="has-text-weight-bold ">Become a packr</strong>
             </a>
-            <a class="button is-light">Log in</a>
+            <a class="button is-light has-text-weight-bold">Partner with us</a>
           </div>
         </div>
       </div>
