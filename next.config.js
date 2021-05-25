@@ -1,5 +1,4 @@
 const withPlugins = require('next-compose-plugins');
-const withCSS = require('@zeit/next-css');
 const withMDX = require('@next/mdx')();
 
 const nextConfig = {
@@ -19,4 +18,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withPlugins([withMDX, withCSS], nextConfig);
+module.exports = withPlugins([withMDX], nextConfig);

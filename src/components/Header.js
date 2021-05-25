@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import styled from 'styled-components';
 
 const NavTitle = styled.div`
@@ -12,26 +11,54 @@ const NavTitle = styled.div`
   }
 `;
 
+const Container = styled.nav`
+  .navbar-item img {
+    max-height: 5rem !important;
+  }
+`;
+
 const Header = () => (
-  <nav className="navbar" role="navigation" aria-label="main navigation">
-    <NavTitle className="navbar-brand">
-      <Link href="/">
-        <a className="navbar-item has-text-black is-size-4">
-          <Image src="/images/dummy.jpg" height="90" width="90" alt="dummy" />
-        </a>
-      </Link>
-    </NavTitle>
-    <div id="navbarBasicExample" className="navbar-menu">
-      <div className="navbar-end">
-        <Link href="/">
-          <a className="navbar-item">Home</a>
-        </Link>
-        <Link href="/about">
-          <a className="navbar-item">About </a>
-        </Link>
+  <Container className="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img
+          src="https://www.packrs.co/images/packrs-logo.svg"
+          width="112"
+          height="28"
+        />
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">About</a>
+        <a class="navbar-item">Supports</a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">Log in</a>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
+  </Container>
 );
 
 export default Header;
