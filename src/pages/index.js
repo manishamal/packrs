@@ -3,6 +3,8 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 import Homehero from '../components/Homehero';
 import Items from '../components/Items';
+import Information from '../components/Information ';
+import Choice from '../components/Choice ';
 
 const Index = () => {
   return (
@@ -14,6 +16,8 @@ const Index = () => {
       />
       <Homehero />
       <Items />
+      <Information />
+      <Choice />
     </Layout>
   );
 };
