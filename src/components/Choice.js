@@ -11,7 +11,10 @@ const Choice = () => {
           You want it, we deliver it
         </h1>
         <div class="columns">
-          <div class="column">Any product you need</div>
+          <div class="column">
+            <h1 className="">Any product you need</h1>
+            <p className="">From food, fruits, gifts to keys we can get it for you!</p>
+          </div>
           <div class="column">Second column</div>
           <div class="column">Third column</div>
           <div class="column">Fourth column</div>

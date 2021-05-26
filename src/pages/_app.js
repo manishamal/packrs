@@ -21,7 +21,16 @@ class MyApp extends App {
               <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+
               />
+
+
+              <link rel="preconnect"
+                href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,600&display=swap" rel="stylesheet"/>
+
+
+
             </Head>
             <Component {...pageProps} />
             <GlobalStyle />

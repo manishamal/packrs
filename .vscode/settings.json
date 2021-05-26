@@ -104,7 +104,7 @@
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
-    "files.autoSave": "onWindowChange",
+    "files.autoSave": "afterDelay",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.fontLigatures": true,
