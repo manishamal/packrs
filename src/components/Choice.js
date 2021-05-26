@@ -1,7 +1,4 @@
-const data1 = [
-  { icon: 'fas fa-cube', list: 'Lorem ipsum dolor sit amet' },
-  { icon: 'fas fa-cube', list: 'Lorem ipsum dolor sit amet' },
-];
+const data =[{"name":"test1"},{"name":"test2"}];
 
 const Choice = () => {
   return (
@@ -12,14 +9,15 @@ const Choice = () => {
         </h1>
         <div class="columns">
           <div class="column">
-            <h1 className="">Any product you need</h1>
-            <p className="">From food, fruits, gifts to keys we can get it for you!</p>
-          </div>
-          <div class="column">Second column</div>
-          <div class="column">Third column</div>
-          <div class="column">Fourth column</div>
+          <div>
+        {data.map(function(d, idx){
+          return (<li key={idx}>{d.name}</li>)
+        })}
+
+      </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

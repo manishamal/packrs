@@ -9,7 +9,7 @@ import Choice from '../components/Choice';
 const Index = () => {
   return (
     <Layout>
-      <NextSeo title="Packrds" description="packrs website" />
+      <NextSeo title="Packrs" description="packrs website" />
       <Homehero />
       <Items />
       <Information />
