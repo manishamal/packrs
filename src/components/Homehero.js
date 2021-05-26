@@ -55,8 +55,8 @@ const Homehero = () => {
           </div>
 
           <div class="column is-offset-1">
-            <figure class="image ">
-              <img src="images/hero.png" />
+            <figure class="image is-square">
+              <img src="https://www.packrs.co/images/hero-bg.png" />
             </figure>
           </div>
         </div>
