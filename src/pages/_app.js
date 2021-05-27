@@ -8,6 +8,9 @@ import withReduxStore from '../utils/with-redux-store';
 import theme, { GlobalStyle } from '../utils/theme';
 import config from '../utils/config';
 
+
+
+
 class MyApp extends App {
   render() {
     const { Component, pageProps, reduxStore } = this.props;

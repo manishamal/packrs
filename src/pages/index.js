@@ -5,6 +5,7 @@ import Homehero from '../components/Homehero';
 import Items from '../components/Items';
 import Information from '../components/Information';
 import Choice from '../components/Choice';
+import Pictures from '../components/Pictures';
 
 const Index = () => {
   return (
@@ -14,7 +15,9 @@ const Index = () => {
       <Items />
       <Information />
       <Choice />
+      <Pictures />
     </Layout>
+
   );
 };
 
