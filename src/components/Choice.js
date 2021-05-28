@@ -26,6 +26,7 @@ const data = [
 const Choice = () => {
   return (
     <div className="section">
+      
       <div className="container">
         <h1 className="has-text-centered is-size-2 has-text-weight-semibold has-text-black">
           You want it, we deliver it
@@ -36,9 +37,7 @@ const Choice = () => {
               <div key={Item.title}>
                 {Item.icon}
                 <h1 className="title is-3 pt-1 has-text-black">{Item.title}</h1>
-                <p className="subtitle is-4">
-                  {Item.subtitle}
-                </p>
+                <p className="subtitle is-4">{Item.subtitle}</p>
               </div>
             </div>
           ))}

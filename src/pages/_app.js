@@ -11,6 +11,7 @@ import config from '../utils/config';
 
 
 
+
 class MyApp extends App {
   render() {
     const { Component, pageProps, reduxStore } = this.props;
