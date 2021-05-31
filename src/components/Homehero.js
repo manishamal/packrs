@@ -12,6 +12,11 @@ const Container = styled.div`
     padding-top: 30px;
   }
 `;
+const H1 = styled.a`
+font-size: 3.4rem !important;
+font-weight: 700 !important;
+`;
+
 
 const Homehero = () => {
   return (
@@ -19,10 +24,10 @@ const Homehero = () => {
       <div className="container">
         <div class="columns is-mobile">
           <div class="column is-5">
-            <h1 className="bd-notification is-size-1 has-text-weight-medium has-text-black">
+            <H1 className="bd-notification is-size-1 has-text-weight-medium has-text-black">
               Get anything delivered to your doorstep, office, cafe, school,
               anywhere imaginative .
-            </h1>
+            </H1>
             <div class="field is-grouped">
               <p class="control is-expanded py-3">
                 <input

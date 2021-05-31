@@ -56,7 +56,7 @@ const Items = () => {
         <div class="columns is-multiline section is-vcentered">
           {data1.map((item) => (
             <div class="column  is-3 ">
-              <div class="">
+              <div class="card">
                 <div className="section has-text-centered is-padding">
                   <div class="card-image ">
                     <figure class="image is-64x64">

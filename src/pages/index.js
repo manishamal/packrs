@@ -15,7 +15,8 @@ const Index = () => {
       <Items />
       <Information />
       <Choice />
-      <Pictures />
+      <Pictures
+       />
     </Layout>
 
   );

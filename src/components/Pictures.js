@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 
+
+
 const Section = styled.div`
   .is-font-size {
     font-size: 1.5rem !importent;
@@ -43,6 +45,7 @@ const Pictures = () => {
                       your life. Plus great fees, perks and discounts.
                       <div class="buttons">
                         <button class="button is-button has-text-white mt-3">Find out more <i class="fal fa-hand-point-right"></i></button>
+                      
                       </div>
                     </p>
                   </div>

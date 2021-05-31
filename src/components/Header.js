@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import { FaHandPointRight } from 'react-icons/fa';
 
 const NavTitle = styled.div`
   align-self: center;
@@ -28,13 +27,24 @@ const Heading = styled.a`
   font-weight: 700;
   font-size: 1.2rem;
 `;
+const Key = styled.h1`
+h1:hover {
+  background-color: green !important;
+  `;
 
 const Header = () => (
+
   <Container className="navbar" role="navigation" aria-label="main navigation">
+
+
     <div className="navbar-brand">
+    <img src="https://www.packrs.co/images/hero-bg.png" />
+
       <a className="navbar-item" href="https://bulma.io">
         <Image src="https://www.packrs.co/images/packrs-logo.svg" />
       </a>
+
+
 
       <a
         role="button"
@@ -48,25 +58,31 @@ const Header = () => (
       </a>
     </div>
 
+
     <div id="navbarBasicExample" className="navbar-menu">
       <div className="navbar-start is-size-5 has-text-weight-medium	">
         <Heading className="navbar-item has-text-black ">About</Heading>
         <Heading className="navbar-item has-text-black ">Supports</Heading>
+
       </div>
 
       <div className="navbar-end">
         <div className="navbar-item">
-          <div className="buttons">
-            <a className="button is-primary is-color-green ">
+
+
+          <Key className="buttons">
+            <h1 className="button is-primary is-color-green ">
+
               <strong className="has-text-weight-bold ">Become a packr</strong>
-            </a>
+            </h1>
             <a className="button is-light has-text-weight-bold">
               Partner with us
+
             </a>
-          </div>
+
+          </Key>
         </div>
       </div>
-      <FaHandPointRight />
     </div>
   </Container>
 );
