@@ -11,6 +11,8 @@
     "editor.cursorBlinking": "solid",
     "editor.renderWhitespace": "all",
     "files.defaultLanguage": "markdown",
+    "files.eol": "\n",
+
     "cSpell.userWords": [
         "Airpods",
         "Airtable",

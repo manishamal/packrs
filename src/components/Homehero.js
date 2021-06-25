@@ -13,55 +13,56 @@ const Container = styled.div`
   }
 `;
 const H1 = styled.a`
-font-size: 3.4rem !important;
-font-weight: 700 !important;
+  font-size: 3.4rem !important;
+  font-weight: 700 !important;
 `;
 
-
-const Homehero = () => {
+const HomeHero = () => {
   return (
     <Container className="section">
       <div className="container">
-        <div class="columns is-mobile">
-          <div class="column is-5">
+        <div className="columns is-mobile">
+          <div className="column is-5">
             <H1 className="bd-notification is-size-1 has-text-weight-medium has-text-black">
               Get anything delivered to your doorstep, office, cafe, school,
               anywhere imaginative .
             </H1>
-            <div class="field is-grouped">
-              <p class="control is-expanded py-3">
+            <div className="field is-grouped">
+              <p className="control is-expanded py-3">
                 <input
-                  class="input"
+                  className="input"
                   type="text"
                   placeholder="your mobile number"
                 />
               </p>
-              <p class="control py-3">
-                <a class="button is-info is-color-green ">Start ordering</a>
+              <p className="control py-3">
+                <a className="button is-info is-color-green ">Start ordering</a>
               </p>
             </div>
             <p className="is-size-5 has-text-black">
               We’ll send you a text with a link to download the app.
             </p>
 
-            <p class="buttons is-padding">
+            <p className="buttons is-padding">
               <div className="">
                 <img
                   className="is-height"
                   src="https://www.packrs.co/images/store-ios.png"
+                  alt="packer"
                 />
 
                 <img
                   className="is-height"
                   src="https://www.packrs.co/images/store-android.png"
+                  alt="packer"
                 />
               </div>
             </p>
           </div>
 
-          <div class="column is-offset-1">
-            <figure class="image is-square">
-              <img src="https://www.packrs.co/images/hero-bg.png" />
+          <div className="column is-offset-1">
+            <figure className="image is-square">
+              <img src="https://www.packrs.co/images/hero-bg.png" alt="" />
             </figure>
           </div>
         </div>
@@ -69,4 +70,4 @@ const Homehero = () => {
     </Container>
   );
 };
-export default Homehero;
+export default HomeHero;

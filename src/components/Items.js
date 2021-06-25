@@ -53,24 +53,24 @@ const Items = () => {
           What can get delivered with PACKRS
         </h1>
 
-        <div class="columns is-multiline section is-vcentered">
+        <div className="columns is-multiline section is-vcentered">
           {data1.map((item) => (
-            <div class="column  is-3 ">
-              <div class="card">
+            <div className="column  is-3 ">
+              <div className="card">
                 <div className="section has-text-centered is-padding">
-                  <div class="card-image ">
-                    <figure class="image is-64x64">
+                  <div className="card-image ">
+                    <figure className="image is-64x64">
                       {item.image && (
-                        <img className="is-rounded" src={item.image} />
+                        <img alt="" className="is-rounded" src={item.image} />
                       )}
                     </figure>
                   </div>
                 </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class=""></div>
-                    <div class="media-content">
-                      <p class="title is-5 is-font-color-green has-text-centered">
+                <div className="card-content">
+                  <div className="media">
+                    <div className="" />
+                    <div className="media-content">
+                      <p className="title is-5 is-font-color-green has-text-centered">
                         {item.title}
                       </p>
                       <p className="subtitle is-6 has-text-black">
@@ -79,7 +79,7 @@ const Items = () => {
                     </div>
                   </div>
 
-                  <div class="content">
+                  <div className="content">
                     <p className="subtitle is-6 has-text-black">
                       {item.paragraph1}
                     </p>
