@@ -44,8 +44,10 @@ const Pictures = () => {
                           type="button"
                           className="button is-button has-text-white mt-3"
                         >
-                          Find out more{' '}
-                          <i className="fal fa-hand-point-right" />
+                          <h1>
+                          <h1>Find out more 👉 </h1>
+
+                          </h1>
                         </button>
                       </div>
                     </p>
@@ -60,7 +62,7 @@ const Pictures = () => {
                 <figure className="image is-4by3">
                   <img
                     src="https://www.packrs.co/images/Partner.Png"
-                    alt="Placeholder image"
+                    alt="Placeholder img"
                   />
                 </figure>
               </div>
@@ -76,9 +78,11 @@ const Pictures = () => {
                       Partner with Packrs and reach more customers than ever. We
                       handle delivery, so you can focus on the business.
                       <div className="buttons">
-                        <button className="button is-button has-text-white mt-3">
-                          Find out more{' '}
-                          <i className="fas fa-hand-point-right" />
+                        <button
+                          type
+                          className="button is-button has-text-white mt-3"
+                        >
+                          <h1>Find out more 👉 </h1>
                         </button>
                       </div>
                     </p>

@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 
-import Homehero from '../components/Homehero';
+import HomeHero from '../components/HomeHero';
 import Items from '../components/Items';
 import Information from '../components/Information';
 import Choice from '../components/Choice';
@@ -11,14 +11,12 @@ const Index = () => {
   return (
     <Layout>
       <NextSeo title="Packrs" description="packrs website" />
-      <Homehero />
+      <HomeHero />
       <Items />
       <Information />
       <Choice />
-      <Pictures
-       />
+      <Pictures />
     </Layout>
-
   );
 };
 
