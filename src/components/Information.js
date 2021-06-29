@@ -12,7 +12,7 @@ const Information = () => {
   return (
     <div>
       <h1 className="has-text-centered is-size-2 has-text-weight-semibold has-text-black mb-5">
-        What can get delivered with PACKRS
+        What can get delivered with Packrs
       </h1>
       <Section className="section hero is-medium">
         <div className="container" />
