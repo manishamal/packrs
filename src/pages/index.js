@@ -7,6 +7,7 @@ import Information from '../components/Information';
 import Choice from '../components/Choice';
 import Pictures from '../components/Pictures';
 import FeedBack from '../components/FeedBack';
+import ContactUs from '../components/ContactUs';
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Choice />
       <Pictures />
       <FeedBack />
+      <ContactUs />
     </Layout>
   );
 };

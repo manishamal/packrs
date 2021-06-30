@@ -6,7 +6,7 @@ const Section = styled.section`
   }
 `;
 const P = styled.p`
-  font-size: 17px;
+  /* font-size: 17px; */
   letter-spacing: 0.03rem !important;
 `;
 
