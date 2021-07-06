@@ -9,6 +9,10 @@ const Container = styled.div`
 const Ul = styled.li`
   list-style: none;
 `;
+const Section = styled.section`
+  background-color: rgb(28, 19, 35);
+`;
+
 const data = [
   {
     title: 'Download The App',
@@ -41,35 +45,42 @@ const data = [
 
 const Footer = () => {
   return (
-    <Container className="container mt-6 ">
-      <div className="columns ">
-        {data.map((item) => (
-          <div className="column ">
-            <div className="content ">
-              <h1>{item.title}</h1>
+    <Section className="section">
+      <Container className="container mt-6 ">
+        <div className="columns ">
+          {data.map((item) => (
+            <div className="column ">
+              <div className="content ">
+                <h1>{item.title}</h1>
 
-              <Ul>
-                <li>{item.list}</li>
-                <li>{item.list1}</li>
-                <li>{item.list2}</li>
-                <li>{item.list3}</li>
-                <li>{item.list4}</li>
-              </Ul>
-              <figure className="image is-128x128 ">
-              <div class="level-item has-text-centered">
-                  {item.image && <img alt="" className="" src={item.image} />}
-                  {item.image && <img alt="" className="" src={item.image1} />}
-                </div>
-              </figure>
+                <Ul>
+                  <li>{item.list}</li>
+                  <li>{item.list1}</li>
+                  <li>{item.list2}</li>
+                  <li>{item.list3}</li>
+                  <li>{item.list4}</li>
+                </Ul>
 
-              <div />
+                <figure className="image is-128x128 ">
+                  <div className="level-item has-text-centered ">
+                    {item.image && <img alt="" className="" src={item.image} />}
+                    {item.image && (
+                      <img alt="" className="" src={item.image1} />
+                    )}
+                  </div>
+                </figure>
+
+                <div />
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <p>© 2021 Packrs | Made with ❤️ in Punjab, India, and on the Internet.</p>
-    </Container>
+        <p>
+          © 2021 Packrs | Made with ❤️ in Punjab, India, and on the Internet.
+        </p>
+      </Container>
+    </Section>
   );
 };
 

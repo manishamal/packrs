@@ -11,6 +11,10 @@ const Container = styled.div`
   .is-padding {
     padding-top: 30px;
   }
+  background-image: url(https://www.packrs.co/images/hero-bg.png);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
 `;
 const H1 = styled.a`
   font-size: 3.4rem !important;
@@ -19,13 +23,13 @@ const H1 = styled.a`
 
 const HomeHero = () => {
   return (
-    <Container className="section">
-      <div className="container">
+    <div className="section">
+      <Container className="container">
         <div className="columns is-mobile">
-          <div className="column is-5">
+          <div className="column is-half">
             <H1 className="bd-notification is-size-1 has-text-weight-medium has-text-black">
               Get anything delivered to your doorstep, office, cafe, school,
-              anywhere imaginative .
+              anywhere imaginative.
             </H1>
             <div className="field is-grouped">
               <p className="control is-expanded py-3">
@@ -66,8 +70,8 @@ const HomeHero = () => {
             </figure>
           </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 export default HomeHero;

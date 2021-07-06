@@ -9,7 +9,11 @@ const Section = styled.div`
     padding: 1rem 0.5rem;
   }
 `;
-
+const Div = styled.div`
+  :hover {
+    box-shadow: rgb(0 0 0 / 8%) 0px 7px 18px;
+  }
+`;
 const data1 = [
   {
     title: 'Pick n Drop',
@@ -56,7 +60,7 @@ const Items = () => {
         <div className="columns is-multiline section is-vcentered">
           {data1.map((item) => (
             <div className="column  is-3 ">
-              <div className="card">
+              <Div className="ggg">
                 <div className="section has-text-centered is-padding">
                   <div className="card-image ">
                     <figure className="image is-64x64">
@@ -85,7 +89,7 @@ const Items = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </Div>
             </div>
           ))}
         </div>
