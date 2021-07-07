@@ -6,7 +6,7 @@ import Items from '../components/Items';
 import Information from '../components/Information';
 import Choice from '../components/Choice';
 import Pictures from '../components/Pictures';
-import FeedBack from '../components/FeedBack';
+import Footer from '../components/Footer';
 import ContactUs from '../components/ContactUs';
 
 const Index = () => {
@@ -18,7 +18,6 @@ const Index = () => {
       <Information />
       <Choice />
       <Pictures />
-      <FeedBack />
       <ContactUs />
     </Layout>
   );

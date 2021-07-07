@@ -12,9 +12,10 @@ const Container = styled.div`
     padding-top: 30px;
   }
   background-image: url(https://www.packrs.co/images/hero-bg.png);
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position: 100% 0%;
+
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
 `;
 const H1 = styled.a`
   font-size: 3.4rem !important;
@@ -64,11 +65,11 @@ const HomeHero = () => {
             </p>
           </div>
 
-          <div className="column is-offset-1">
+          {/* <div className="column is-offset-1">
             <figure className="image is-square">
               <img src="https://www.packrs.co/images/hero-bg.png" alt="" />
             </figure>
-          </div>
+          </div> */}
         </div>
       </Container>
     </div>

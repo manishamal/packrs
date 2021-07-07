@@ -1,15 +1,10 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
-  height: 6rem;
-  align-content: center;
-  align-items: center;
-  /* background-color: black !important; */
-`;
+const Container = styled.div``;
 const Ul = styled.li`
   list-style: none;
 `;
-const Section = styled.section`
+const Div = styled.div`
   background-color: rgb(28, 19, 35);
 `;
 
@@ -45,42 +40,46 @@ const data = [
 
 const Footer = () => {
   return (
-    <Section className="section">
+    <Div className="section">
       <Container className="container mt-6 ">
         <div className="columns ">
           {data.map((item) => (
             <div className="column ">
               <div className="content ">
-                <h1>{item.title}</h1>
+                <h1 className="has-text-white">{item.title}</h1>
 
                 <Ul>
-                  <li>{item.list}</li>
-                  <li>{item.list1}</li>
-                  <li>{item.list2}</li>
-                  <li>{item.list3}</li>
-                  <li>{item.list4}</li>
+                  <span className="list has-text-white">
+                    <li>{item.list}</li>
+                    <li>{item.list1}</li>
+                    <li>{item.list2}</li>
+                    <li>{item.list3}</li>
+                    <li>{item.list4}</li>
+                  </span>
                 </Ul>
-
-                <figure className="image is-128x128 ">
-                  <div className="level-item has-text-centered ">
-                    {item.image && <img alt="" className="" src={item.image} />}
-                    {item.image && (
-                      <img alt="" className="" src={item.image1} />
-                    )}
-                  </div>
-                </figure>
+                {item.image && item.image1 && (
+                  <figure className="image is-128x128 ">
+                    <div className="level-item has-text-centered ">
+                      {item.image && (
+                        <img alt="" className="ml-6" src={item.image} />
+                      )}
+                      {item.image1 && (
+                        <img alt="" className="ml-2" src={item.image1} />
+                      )}
+                    </div>
+                  </figure>
+                )}
 
                 <div />
               </div>
             </div>
           ))}
         </div>
-
-        <p>
+        <p className="has-text-white">
           © 2021 Packrs | Made with ❤️ in Punjab, India, and on the Internet.
         </p>
       </Container>
-    </Section>
+    </Div>
   );
 };
 

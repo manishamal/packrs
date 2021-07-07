@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -33,7 +34,7 @@ const FeedBack = () => (
               <div className="media">
                 <div className="media-left">
                   <figure className="image is-48x48">
-                    <img
+                    <image
                       src="https://www.packrs.co/images/reviews/gurkaran.jpg"
                       alt="Placeholder image"
                     />
@@ -59,7 +60,7 @@ const FeedBack = () => (
               <div className="media">
                 <div className="media-left">
                   <figure className="image is-48x48">
-                    <img
+                    <image
                       src="https://www.packrs.co/images/reviews/samar.jpg"
                       alt="Placeholder image"
                     />
