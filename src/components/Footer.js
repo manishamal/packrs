@@ -75,9 +75,23 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <p className="has-text-white">
-          © 2021 Packrs | Made with ❤️ in Punjab, India, and on the Internet.
-        </p>
+        <div className="columns ">
+          <div className="column is-10">
+            <p className="has-text-white">
+              © 2021 Packrs | Made with ❤️ in Punjab, India, and on the
+              Internet.{' '}
+            </p>
+          </div>
+          <div className="column ">
+            <i className="fab fa-facebook-square icon is-medium has-text-white" />
+
+            <i className="fab fa-instagram icon is-medium has-text-white" />
+
+            <i className="fab fa-twitter-square icon is-medium has-text-white" />
+
+            <i className="fab fa-invision icon is-medium has-text-white" />
+          </div>
+        </div>
       </Container>
     </Div>
   );

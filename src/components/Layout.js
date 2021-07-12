@@ -1,9 +1,9 @@
 import Header from './Header';
 import Footer from './Footer';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, hideHeader }) => (
   <div className="">
-    <Header />
+    {!hideHeader && <Header />}
     {children}
     <Footer />
   </div>
