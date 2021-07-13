@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Container = styled.nav`
+  background-color: transparent;
   .navbar-item img {
   }
   .is-color-green {
